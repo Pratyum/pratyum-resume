@@ -1,0 +1,142 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.0.1, 11 September 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you'll need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+\setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkBrown}{HTML}{3F2A14}
+\definecolor{Gold}{HTML}{FFD700}
+\definecolor{Blue}{HTML}{0000ff}
+%\colorlet{heading}{VividPurple}
+\colorlet{heading}{DarkBrown}
+\colorlet{heading-line}{Gold}
+\colorlet{accent}{DarkBrown}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Pratyum Jagannath}
+\tagline{Software Enthusiast}
+% Cropped to square from my github page
+% \photo{2.5cm}{12628502.jpeg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{pratyum001@e.ntu.edu.sg}
+   \phone{(+65) 9610 6009}
+ % \mailaddress{Address, Street, 00000 County}
+  \location{30, Nanyang Crescent, Singapore, 637659}
+%   \homepage{http://pratyumjagan.com}
+
+  \linkedin{linkedin.com/in/pratyumjagannath}
+ \github{github.com/Pratyum} 
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cveventnew{Software Engineering Intern}{Visa Inc.}{Switching Systems}{May - July 2017}{Singapore}
+\begin{itemize}
+\item Built a Web-based Interface which helps index and search real-time transactions
+\item Technologies Used: Angular, Spring, TPF
+\end{itemize}
+\divider
+
+\cveventnew{Co-Founder and CTO}{Dorm Buddy LLP}{Founding Member in the core team}{Dec 2016 - Present}{Singapore}
+\begin{itemize}
+\item Startup to help Exchange students rent dorm essentials in Singapore. Built and maintained the entire website from scratch.
+\item Technologies Used: Django, Postgres, HTML/CSS/JS, Nginx
+\end{itemize}
+
+\divider
+
+\cveventnew{Hardware Engineering Intern}{AMD Inc.}{System Level Testing }{July - Dec 2016}{Singapore}
+\begin{itemize}
+\item Created test suites and flows for testing different parts of the products. 
+\item Created a tool to help remotely run tests.
+\item Debugged errors which increases the yield by 15\%.
+\item Technologies Used: Shell Scripting, Git, C++
+\end{itemize}
+
+\divider
+
+\cveventnew{Software Engineering Intern}{Lumino Technologies}{Android Interface Design and Development Team}{May - July 2015}{Chennai,India}
+\begin{itemize}
+\item Integrated Android application to Twilio (APIs for Text Messaging, VoIP \& Voice in the Cloud) to enable voice analysis of phone calls.
+\item Technologies Used: Android, Twilio API, Gradle
+\end{itemize}
+
+% \cvsection{A Day of My Life}
+
+% % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% % \wheelchart{outer radius}{inner radius}{
+% % comma-separated list of value/text width/color/detail}
+% \wheelchart{1.5cm}{0.5cm}{ 10/13em/accent!30/Sleeping \& dreaming about work, 
+%   25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%   5/12em/accent!10/New York \& San Francisco Ballet Jawbone board member, 
+%   20/12em/accent!40/Spending time with family,
+%   5/8em/accent!20/Business development for Yahoo!\ after the Verizon acquisition,
+%   30/9em/accent/Showing Yahoo!\ employees that their work has meaning,
+%   5/8em/accent!20/Baking cupcakes
+% }
+
+% \clearpage
+
+\cvsection{Projects}
+{\faLaptop} \cvevent{Interactive Book Tour}{Final Year Project}{August 2017- Present}{}
+
+{\faTerminal} \cvevent{Crumbs}{CEC-Acenture Hackathon}{September 2016}{}
+
+\begin{itemize}
+\item A native android application that aimed revolutionizing the the idea of ordering foods in groups by allowing individual meal payments with the fun of eating delivered food together. 
+\item Technologies Used: Android, Facebook API, Parse server, PayPal API
+\end{itemize}
+
+
+\end{document}
